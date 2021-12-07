@@ -1,0 +1,73 @@
+body,
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    /* the rest of your styling */
+}
+
+.topdiv {
+    background: url('../images/backa.jpg');
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+.topdivbtn {
+    border-radius: 0 !important;
+}
+
+.row {
+    width: 100%;
+}
+
+
+/*------------------- Card Styles---------------------->*/
+
+.card_div {
+    text-align: center;
+}
+
+.card_create {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin: 4px
+}
+
+.card-img-top {
+    font-size: 90px;
+    text-align: center;
+}
+
+.top_create {
+    color: orangered;
+}
+
+.create_btn {
+    background-color: orangered !important;
+    border: none !important;
+    align-self: center !important;
+}
+
+
+/*------------------------Card styles End-----------------------*/
+
+
+/*-------------------------Create form---------------------------*/
+
+.form_container {
+    /* Can be in percentage also. */
+    height: auto;
+    width: 50% !important;
+    margin: 0 auto;
+    padding: 2px !important;
+    position: relative;
+}
