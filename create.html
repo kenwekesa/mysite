@@ -34,11 +34,9 @@
      <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-5">
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">Home</a>
+          <a class="nav-link font-weight-bold" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold" href="#">Items</a>
-        </li>
+       
         <li class="nav-item">
           <a class="nav-link font-weight-bold" href="#">More</a>
         </li>
@@ -59,73 +57,77 @@
 <div class="container form_container shadow justify-content-center mt-4 pt-4 pb-4" style="text-align: center">
   <div class="col-7" style="display: inline-block; text-align: left" >
     <h3 style ="color: #33A4F1">Create new user</h3>
-    <form action="mysite_api.php" method = "post">
-        <div class="form-group">
-            <label for="id1">First Name</label>
+    <form action="mysite_api.php" name="customer_details_form" method = "post" class="form-horizontal" onsubmit="return validateForm()" >
+      
+        <div class="form-group row">
+            <label for="id1" class="col-4">First Name</label>
+            
             <input class="form-control col-8"
                    type="text" 
                    id="id1" 
                   name="firstname" 
                    placeholder="Enter your First Name">
+                   
         </div>
-        <div class="form-group">
-            <label for="id1">Second Name</label>
+        <div class="form-group row">
+            <label for="id1" class="col-4">Second Name</label>
             <input class="form-control col-8"
                    type="text" 
                    id="id1"
                    name="secondname" 
                    placeholder="Enter your Second Name">
         </div>
-        <div class="form-group">
-            <label for="id2">ID NO:</label>
+        <div class="form-group row">
+            <label for="id2" class="col-4">ID NO:</label>
             <input class="form-control col-8" 
                    type="number" 
                    id="id2"
                    name="id_number" 
                    placeholder="Enter your ID Number">
         </div>
-        <div class="form-group">
-            <label for="id2">Gender</label>
+        <div class="form-group row">
+            <label for="id2" class="col-4">Gender</label>
             <input class="form-control col-8" 
                    type="text" 
                    id="id2"
                    name="gender" 
-                   placeholder="Gender">
+                   placeholder="Customer's gender">
         </div>
-        <div class="form-group">
-            <label for="id1">Email</label>
+       
+        <div class="form-group row">
+            <label for="id1" class="col-4">Email</label>
             <input class="form-control col-8"
                    type="email" 
                    id="id1" 
                    name="email"
                    placeholder="Enter your email address">
         </div>
-        <div class="form-group">
-            <label for="id1">Address</label>
+        <div class="form-group row">
+            <label for="id1" class="col-4">Address</label>
             <input class="form-control col-8"
                    type="text" 
                    id="id1" 
                    name="address"
                    placeholder="Enter your postal address">
         </div>
-        <div class="form-group">
-            <label for="id1">Zip code</label>
-            <input class="form-control col-8"
+        <div class="form-group row">
+            <label for="id1" class="col-4">Zip code</label>
+            <input class="form-control col-sm-8"
                    type="text" 
                    id="id1" 
                    name="zipcode"
                    placeholder="Your zip code">
         </div>
-        <div class="form-group">
-            <label for="id1">Phone number</label>
+        <div class="form-group row">
+            <label for="id1" class="col-4">Phone number</label>
             <input class="form-control col-8"
                    type="text" 
                    id="id1" 
                    name="phone_number"
                    placeholder="Enter your User Name">
         </div>
-        <div class="form-group">
-            <label for="id2">City</label>
+        <div class="form-group row">
+            <label for="id2" class="col-4">City</label>
             <input class="form-control col-8" 
                    type="text" 
                    id="id2"
